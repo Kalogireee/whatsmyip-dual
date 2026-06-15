@@ -8,6 +8,10 @@ The page checks the public IP address on each refresh and displays the local ref
 
 <p align="center"><img src="./img/result.png" alt="WhatsMyIP Dual screenshot" width="700"></p>
 
+## Sources
+
+[![Docker Hub](https://img.shields.io/badge/Docker%20Hub-View%20image-blue?logo=docker)](https://hub.docker.com/r/kalogire/whatsmyip-dual)
+
 ## Features
 
 - Display public IPv4 and/or IPv6 address
@@ -48,6 +52,9 @@ services:
 ```yaml 
 docker run -d --name whatsmyip-dual --network host -e TZ=Europe/Paris -e IP_MODE=both -e PORT=3464  kalogire/whatsmyip-dual:latest 
 ```
+## Other examples of uses
+
+- You can find examples of other uses (e.g., Gluetun) in the [examples folder](./examples).
 
 ## Trivy Security Scan Results
 
