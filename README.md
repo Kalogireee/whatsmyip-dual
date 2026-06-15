@@ -48,6 +48,9 @@ services:
 ```yaml 
 docker run -d --name whatsmyip-dual --network host -e TZ=Europe/Paris -e IP_MODE=both -e PORT=3464  kalogire/whatsmyip-dual:latest 
 ```
+## Other examples of uses
+
+- You can find examples of other uses (e.g., Gluetun) in the [examples folder](./examples).
 
 ## Trivy Security Scan Results
 
