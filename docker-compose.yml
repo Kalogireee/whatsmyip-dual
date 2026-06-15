@@ -1,0 +1,10 @@
+services:
+  whatsmyip-dual:
+    image: whatsmyip-dual:latest
+    container_name: whatsmyip-dual
+    network_mode: host
+    environment:
+      - TZ=Europe/Paris
+      - IP_MODE=both
+      - PORT=3465
+    restart: unless-stopped

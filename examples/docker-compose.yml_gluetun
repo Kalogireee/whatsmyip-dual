@@ -1,0 +1,11 @@
+whatsmyip-dual:
+    image: kalogire/whatsmyip-dual:latest
+    container_name: whatsmyip-dual
+    network_mode: service:gluetun
+    depends_on:
+      - gluetun
+    environment:
+      - TZ=Europe/Paris
+      - IP_MODE=both
+      - PORT=3464
+    restart: unless-stopped
