@@ -6,5 +6,5 @@ services:
     environment:
       - TZ=Europe/Paris
       - IP_MODE=both
-      - PORT=3465
+      - PORT=3464
     restart: unless-stopped
